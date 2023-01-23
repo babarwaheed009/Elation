@@ -438,10 +438,12 @@
 
     $(".navbar-toggler").click(function(){
         $("#navbarToggleExternalContent").css('transform', 'translate(0%)');
+        $('body').css('overflow', 'hidden');
     });
 
     $(".close-sidebar").click(function(){
         $("#navbarToggleExternalContent").css('transform', 'translate(100%)');
+        $('body').css('overflow', 'auto');
     });
 </script>
 </body>
